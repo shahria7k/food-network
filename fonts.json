@@ -1,0 +1,14 @@
+{
+	"Montserrat": {
+		"font-weight": [800, 700, 600, 500],
+		"usages": ["h1:700", ""]
+	},
+	"Manrope": {
+		"font-weight": [700, 600, 500],
+		"usages": ["h1#primary:700", ""]
+	},
+	"Roboto": {
+		"font-weight": [900],
+		"usages": ["h1#logo", ""]
+	}
+}
