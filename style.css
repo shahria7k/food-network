@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 /* header section */
 header .navbar {
 	width: 100%;
@@ -23,7 +26,7 @@ nav ul {
 }
 #about img {
 	width: 378px;
-	justify-self: end;
+	justify-self: flex-end;
 	align-self: center;
 }
 /* recipe section */
@@ -107,4 +110,7 @@ footer p {
 	color: #ffffff;
 	margin-top: 60px;
 	text-align: center;
+}
+.hero {
+	margin-top: 100px;
 }
