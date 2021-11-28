@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<style>
+			:root {
+				counter-reset: listItems;
+			}
+			li {
+				counter-increment: listItems;
+			}
+			li::before {
+				content: counter(listItems);
+			}
+
+			.container {
+				display: flex;
+				justify-content: space-around;
+			}
+			.box {
+				height: 200px;
+				width: 200px;
+				background-color: coral;
+				position: relative;
+				transition: background-color 0.5s linear;
+			}
+			.child {
+				position: absolute;
+				top: 150%;
+				left: 150%;
+				width: 100px;
+				height: 100px;
+				background-color: crimson;
+
+				transform: translate(-50%, -50%);
+			}
+			.box:hover {
+				background-color: darkblue;
+			}
+		</style>
+		<div class="container">
+			<div class="box box-1">
+				<div class="child child-1"></div>
+			</div>
+			<div class="box box-2">
+				<div class="child child-2"></div>
+			</div>
+			<div class="box box-3">
+				<div class="child child-3"></div>
+			</div>
+		</div>
+	</body>
+</html>
